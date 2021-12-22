@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 
-// Proje için kritik config değerleri barındırma ihtimali olduğu için config.js'in gitignore'a eklenmesi tavsiye edilmiyor. Bunun için yine
-// .env dosyasının kullanılması gerekiyor sanırım.
+// Proje için kritik config değerleri barındırma ihtimali olduğu için config.js'in gitignore'a eklenmesi tavsiye edilmiyor.
+// Bu nedenle en iyi çözüm yine değişkenlerin .env içinde saklanıp, server'a deploy'larken de belirtilmesi.
 
 const { PHASE_DEVELOPMENT_SERVER } = require('next/constants')
 

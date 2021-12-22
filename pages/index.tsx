@@ -17,8 +17,8 @@ const Home: NextPage<Props> = ({ featuredPosts }) => {
         <title>John&apos;s Blog</title>
         <meta name='description' content='I post about programming.' />
       </Head>
-      <FeaturedPosts posts={featuredPosts} />
       <Hero />
+      <FeaturedPosts posts={featuredPosts} />
     </>
   )
 }
