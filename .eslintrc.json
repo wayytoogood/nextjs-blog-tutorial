@@ -1,0 +1,7 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    // highlighter paketinde children prop'u olduğu için error alıyoruz, o nedenle kapatıldı(sonradan çözümü bulunduğu için kaldırıldı).
+    // "react/no-children-prop": "off"
+  }
+}
