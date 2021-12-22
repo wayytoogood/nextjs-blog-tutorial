@@ -3,29 +3,29 @@
 // Proje için kritik config değerleri barındırma ihtimali olduğu için config.js'in gitignore'a eklenmesi tavsiye edilmiyor.
 // Bu nedenle en iyi çözüm yine değişkenlerin .env içinde saklanıp, server'a deploy'larken de belirtilmesi.
 
-const { PHASE_DEVELOPMENT_SERVER } = require('next/constants')
+// const { PHASE_DEVELOPMENT_SERVER } = require('next/constants')
 
-module.exports = (phase) => {
-  if (phase === PHASE_DEVELOPMENT_SERVER) {
-    return {
-      env: {
-        mongodb_username: 'w2g',
-        mongodb_password: 'huseyin.867',
-        mongodb_cluster: 'nodeexpressprojects',
-        mongodb_database: 'NEXTJS_PORTFOLIO',
-      },
-    }
-  }
+// module.exports = (phase) => {
+//   if (phase === PHASE_DEVELOPMENT_SERVER) {
+//     return {
+//       env: {
+//         mongodb_username: 'w2g',
+//         mongodb_password: 'huseyin.867',
+//         mongodb_cluster: 'nodeexpressprojects',
+//         mongodb_database: 'NEXTJS_PORTFOLIO',
+//       },
+//     }
+//   }
 
-  return {
-    env: {
-      mongodb_username: 'w2g',
-      mongodb_password: 'huseyin.867',
-      mongodb_cluster: 'nodeexpressprojects',
-      mongodb_database: 'NEXTJS_PORTFOLIO',
-    },
-  }
-}
+//   return {
+//     env: {
+//       mongodb_username: 'w2g',
+//       mongodb_password: 'huseyin.867',
+//       mongodb_cluster: 'nodeexpressprojects',
+//       mongodb_database: 'NEXTJS_PORTFOLIO',
+//     },
+//   }
+// }
 
 // Dev ve production sürecinde farklılık olacaksa yukarıda gösterildiği gibi fonksiyon olarak kullanmamız gerekiyor.
 // module.exports = {

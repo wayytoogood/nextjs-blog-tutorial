@@ -10,9 +10,9 @@ const connectionString = `mongodb+srv://${process.env.mongodb_username}:${proces
 
 export const connectDB = async (res: NextApiResponse<Data>) => {
   try {
-    // Aşağıdaki gibi .env dosyasında kendi oluşturduğumuz değişkeni de kullanabilirdik.
-    const client = new MongoClient(connectionString)
-    // const client = new MongoClient(process.env.MONGO_URI!)
+    // Daha güvenli olduğu için .env değişkeni kullanılıyor.
+    // const client = new MongoClient(connectionString)
+    const client = new MongoClient(process.env.MONGO_URI!)
     await client.connect()
     return client
   } catch (error) {
